@@ -8,7 +8,6 @@
   "editor.mouseWheelZoom": true,
   "workbench.sideBar.location": "right",
   "editor.minimap.enabled": false,
-  "editor.semanticHighlighting.enabled": true,
   "workbench.iconTheme": "vscode-icons",
   "window.menuBarVisibility": "toggle",
   "terminal.integrated.fontFamily": "JetbrainsMono Nerd Font",
@@ -28,13 +27,15 @@
   "scm.inputFontFamily": "JetbrainsMono Nerd Font",
   "notebook.output.fontFamily": "JetbrainsMono Nerd Font",
   "chat.editor.fontFamily": "JetbrainsMono Nerd Font",
-  "editor.lineHeight": 1.6,
-  "eslint.format.enable": true,
+  "editor.lineHeight": 22,
   "terminal.integrated.tabs.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
   "editor.suggest.matchOnWordStartOnly": false,
   "editor.fontWeight": "normal",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Moonlight II"
+  "editor.fontSize": 13,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.colorTheme": "JetBrains Rider New UI Dark"
 }
