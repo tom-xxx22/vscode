@@ -36,5 +36,26 @@
   "workbench.startupEditor": "none",
   "editor.fontSize": 13,
   "editor.semanticHighlighting.enabled": true,
-  "editor.bracketPairColorization.enabled": false
+  "editor.bracketPairColorization.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["entity.name.function"],
+        "settings": {
+          "foreground": "#68ce8a"
+        }
+      },
+      {
+        "scope": "entity.name.class, entity.name.type",
+        "settings": {
+          "foreground": "#e285e6"
+        }
+      }
+    ]
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1f1f1f",
+    "titleBar.activeBackground": "#1f1f1f"
+  },
+  "workbench.colorTheme": "Visual Studio Dark"
 }
