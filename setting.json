@@ -34,7 +34,5 @@
   "editor.suggest.matchOnWordStartOnly": false,
   "editor.fontWeight": "normal",
   "workbench.startupEditor": "none",
-  "editor.fontSize": 13,
-  "editor.semanticHighlighting.enabled": true,
-  "editor.bracketPairColorization.enabled": false
+  "editor.fontSize": 13
 }
