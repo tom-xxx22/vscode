@@ -53,5 +53,6 @@
   "typescript.inlayHints.variableTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "literals",
   "javascript.inlayHints.variableTypes.enabled": true,
-  "workbench.editor.showTabs": "none"
+  "workbench.editor.showTabs": "none",
+  "Lua.hint.enable": true
 }
