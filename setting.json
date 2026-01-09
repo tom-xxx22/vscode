@@ -5,67 +5,53 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 4,
   "editor.mouseWheelZoom": true,
-  "workbench.sideBar.location": "right",
   "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
   "editor.fontLigatures": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "editor.cursorWidth": 2,
   "terminal.integrated.tabs.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
   "editor.suggest.matchOnWordStartOnly": false,
   "workbench.startupEditor": "none",
   "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  "editor.fontFamily": "'JetBrainsMono NF', 'JetBrainsMono NF Mono', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'JetBrainsMono NF'",
   "editor.semanticHighlighting.enabled": true,
   "editor.bracketPairColorization.enabled": false,
-  "workbench.editor.showTabs": "none",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.minimumContrastRatio": 1,
-  "window.titleBarStyle": "custom",
-  "gopls": {
-    "ui.semanticTokens": true
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
-
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.formatOnSave": true
   },
-
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.formatOnSave": true
   },
-  "Lua.runtime.version": "Lua 5.4",
-  "Lua.runtime.plugin": "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\plugin.lua",
-  "Lua.runtime.nonstandardSymbol": [
-    "/**/",
-    "`",
-    "+=",
-    "-=",
-    "*=",
-    "/=",
-    "<<=",
-    ">>=",
-    "&=",
-    "|=",
-    "^="
-  ],
-  "Lua.workspace.ignoreDir": [
-    ".vscode",
-    ".git",
-    ".github",
-    "node_modules",
-    "\\[cfx\\]"
-  ],
-  "Lua.workspace.library": [
-    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\runtime",
-    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\natives\\CFX-NATIVE",
-    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\natives\\GTAV"
-  ],
-  "catppuccin.italicComments": true, // In nghiêng comment
-  "catppuccin.italicKeywords": false, // In nghiêng từ khóa
-  "catppuccin.workbenchMode": "default", // Chế độ giao diện
-  "catppuccin.extraBordersEnabled": true,
-  "workbench.colorTheme": "Catppuccin Mocha" // Tắt viền thừa
+  "remote.SSH.remotePlatform": {
+    "62.60.186.250": "linux"
+  },
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "editor.inlayHints.fontFamily": "JetBrainsMono NF",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "workbench.editor.showTabs": "none"
 }
