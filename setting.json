@@ -17,7 +17,7 @@
     // ==========================================
     // 2. CẤU HÌNH EDITOR CƠ BẢN (FONT, SIZE, FORMAT)
     // ==========================================
-    "editor.fontFamily": "'Cascadia Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.lineHeight": 1.5,
@@ -37,7 +37,7 @@
     // ==========================================
     "editor.inlayHints.enabled": "offUnlessPressed", // Bật chế độ "Tàng hình, giữ Ctrl/Cmd để hiện"
     "editor.inlayHints.padding": true,
-    "editor.inlayHints.fontFamily": "Cascadia Mono",
+    "editor.inlayHints.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
 
     // Cấu hình Hint chi tiết cho JS/TS (Khi bấm Ctrl nó mới hiện ra đống này)
     "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -114,12 +114,12 @@
     // 7. TERMINAL, CHAT & LINH TINH KHÁC
     // ==========================================
     "terminal.integrated.tabs.enabled": false,
-    "terminal.integrated.fontFamily": "'Cascadia Mono', Consolas, monospace",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
-    "debug.console.fontFamily": "'Cascadia Mono', Consolas, monospace",
-    "scm.inputFontFamily": "'Cascadia Mono', Consolas, monospace",
-    "chat.editor.fontFamily": "'Cascadia Mono', Consolas, monospace",
-    "markdown.preview.fontFamily": "'Cascadia Mono', Consolas, monospace, sans-serif",
+    "debug.console.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "scm.inputFontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "chat.editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "markdown.preview.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace, sans-serif",
     "security.workspace.trust.untrustedFiles": "open",
     "redhat.telemetry.enabled": true,
     "remote.SSH.remotePlatform": {
