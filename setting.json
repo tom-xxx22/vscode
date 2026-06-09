@@ -1,131 +1,141 @@
 {
-    // ==========================================
-    // 1. GIAO DIỆN & WORKBENCH
-    // ==========================================
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.location": "default",
-    "workbench.layoutControl.enabled": false,
-    "workbench.startupEditor": "none",
-    "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.editor.showTabs": "none",
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.sideBar.location": "right",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Visual Studio Dark - C++",
+  // ==========================================
+  // 1. GIAO DIỆN & WORKBENCH
+  // ==========================================
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.location": "default",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "vscode-icons",
 
-    // ==========================================
-    // 2. CẤU HÌNH EDITOR CƠ BẢN (FONT, SIZE, FORMAT)
-    // ==========================================
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.5,
-    "editor.fontWeight": "normal",
-    "editor.cursorWidth": 2,
-    "editor.mouseWheelZoom": true,
-    "editor.minimap.enabled": false,
+  // ==========================================
+  // 2. CẤU HÌNH EDITOR CƠ BẢN (FONT, SIZE, FORMAT)
+  // ==========================================
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+  "editor.fontWeight": "normal",
+  "editor.cursorWidth": 2,
+  "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.suggest.matchOnWordStartOnly": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+
+  // ==========================================
+  // 3. INLAY HINTS (GỢI Ý NỘI TUYẾN) - ĐÃ SỬA THEO Ý ÔNG
+  // ==========================================
+  "editor.inlayHints.enabled": "offUnlessPressed", // Bật chế độ "Tàng hình, giữ Ctrl/Cmd để hiện"
+  "editor.inlayHints.padding": true,
+  "editor.inlayHints.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+
+  // Cấu hình Hint chi tiết cho JS/TS (Khi bấm Ctrl nó mới hiện ra đống này)
+  "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
+  "js/ts.inlayHints.enumMemberValues.enabled": true,
+  "js/ts.inlayHints.parameterTypes.enabled": true,
+  "js/ts.inlayHints.parameterNames.enabled": "literals",
+  "js/ts.inlayHints.propertyDeclarationTypes.enabled": true,
+
+  // ==========================================
+  // 4. PRETTIER GLOBAL SETTINGS
+  // ==========================================
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+
+  // ==========================================
+  // 5. CẤU HÌNH LUA & DEFOLD & FIVEM
+  // ==========================================
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
+  },
+  "stylua.configPath": "C:\\Users\\kai\\.stylua.toml",
+  "stylua.disableVersionCheck": true,
+  "stylua.styluaPath": "",
+
+  "Lua.runtime.version": "Lua 5.4",
+  "Lua.runtime.plugin": "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\plugin.lua",
+  "Lua.runtime.nonstandardSymbol": [
+    "/**/",
+    "`",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "<<=",
+    ">>=",
+    "&=",
+    "|=",
+    "^=",
+  ],
+  "Lua.workspace.ignoreDir": [
+    ".vscode",
+    ".git",
+    ".github",
+    "node_modules",
+    "\\[cfx\\]",
+  ],
+  "Lua.workspace.library": [
+    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\runtime",
+    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\natives\\CFX-NATIVE",
+    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\natives\\GTAV",
+    "~\\AppData\\Roaming\\Code\\User\\globalStorage\\astronachos.defold",
+    "~\\AppData\\Roaming\\Code\\User\\workspaceStorage\\9b3dc368fc42ebaf129246299db82d53\\astronachos.defold",
+  ],
+  "Lua.hint.enable": true,
+  "Lua.hint.awaitPropagate": true,
+  "Lua.hint.setType": true,
+  "Lua.hint.arrayIndex": "Enable",
+  "defoldKit.general.editorPath": "c:\\Defold-x86_64-win32\\Defold",
+
+  // ==========================================
+  // 6. CẤU HÌNH NGÔN NGỮ KHÁC (PHP, BLADE)
+  // ==========================================
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.formatOnSave": true,
-    "editor.tabSize": 4,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.bracketPairColorization.enabled": false,
-    "editor.suggest.matchOnWordStartOnly": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true,
+  },
 
-    // ==========================================
-    // 3. INLAY HINTS (GỢI Ý NỘI TUYẾN) - ĐÃ SỬA THEO Ý ÔNG
-    // ==========================================
-    "editor.inlayHints.enabled": "offUnlessPressed", // Bật chế độ "Tàng hình, giữ Ctrl/Cmd để hiện"
-    "editor.inlayHints.padding": true,
-    "editor.inlayHints.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-
-    // Cấu hình Hint chi tiết cho JS/TS (Khi bấm Ctrl nó mới hiện ra đống này)
-    "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
-    "js/ts.inlayHints.enumMemberValues.enabled": true,
-    "js/ts.inlayHints.parameterTypes.enabled": true,
-    "js/ts.inlayHints.parameterNames.enabled": "literals",
-    "js/ts.inlayHints.propertyDeclarationTypes.enabled": true,
-
-    // ==========================================
-    // 4. PRETTIER GLOBAL SETTINGS
-    // ==========================================
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-
-    // ==========================================
-    // 5. CẤU HÌNH LUA & DEFOLD & FIVEM
-    // ==========================================
-    "[lua]": {
-        "editor.defaultFormatter": "JohnnyMorganz.stylua",
-    },
-    "stylua.configPath": "C:\\Users\\kai\\.stylua.toml",
-    "stylua.disableVersionCheck": true,
-    "stylua.styluaPath": "",
-
-    "Lua.runtime.version": "Lua 5.4",
-    "Lua.runtime.plugin": "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\plugin.lua",
-    "Lua.runtime.nonstandardSymbol": [
-        "/**/",
-        "`",
-        "+=",
-        "-=",
-        "*=",
-        "/=",
-        "<<=",
-        ">>=",
-        "&=",
-        "|=",
-        "^=",
-    ],
-    "Lua.workspace.ignoreDir": [
-        ".vscode",
-        ".git",
-        ".github",
-        "node_modules",
-        "\\[cfx\\]",
-    ],
-    "Lua.workspace.library": [
-        "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\runtime",
-        "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\natives\\CFX-NATIVE",
-        "~\\AppData\\Roaming\\Code\\User\\globalStorage\\overextended.cfxlua-vscode\\library\\natives\\GTAV",
-        "~\\AppData\\Roaming\\Code\\User\\globalStorage\\astronachos.defold",
-        "~\\AppData\\Roaming\\Code\\User\\workspaceStorage\\9b3dc368fc42ebaf129246299db82d53\\astronachos.defold",
-    ],
-    "Lua.hint.enable": true,
-    "Lua.hint.awaitPropagate": true,
-    "Lua.hint.setType": true,
-    "Lua.hint.arrayIndex": "Enable",
-    "defoldKit.general.editorPath": "c:\\Defold-x86_64-win32\\Defold",
-
-    // ==========================================
-    // 6. CẤU HÌNH NGÔN NGỮ KHÁC (PHP, BLADE)
-    // ==========================================
-    "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
-        "editor.formatOnSave": true,
-    },
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-        "editor.formatOnSave": true,
-    },
-
-    // ==========================================
-    // 7. TERMINAL, CHAT & LINH TINH KHÁC
-    // ==========================================
-    "terminal.integrated.tabs.enabled": false,
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontSize": 14,
-    "debug.console.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "scm.inputFontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "chat.editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "markdown.preview.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace, sans-serif",
-    "security.workspace.trust.untrustedFiles": "open",
-    "redhat.telemetry.enabled": true,
-    "remote.SSH.remotePlatform": {
-        "62.60.186.250": "linux",
-    },
-    "chat.viewSessions.orientation": "stacked",
-    "claudeCode.selectedModel": "TORI",
-    "geminicodeassist.project": "climbing-augury-3wnhv",
+  // ==========================================
+  // 7. TERMINAL, CHAT & LINH TINH KHÁC
+  // ==========================================
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 14,
+  "debug.console.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "scm.inputFontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "chat.editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "markdown.preview.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace, sans-serif",
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": true,
+  "remote.SSH.remotePlatform": {
+    "62.60.186.250": "linux",
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "claudeCode.selectedModel": "TORI",
+  "geminicodeassist.project": "climbing-augury-3wnhv",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Dark+",
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+  },
 }
